@@ -1,0 +1,50 @@
+* {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+  :root {
+    --outside-border-size: 1px;
+    --outside-margin: 7px;
+    --inside-border-size: 3px;
+    --inside-margin: 5px;
+  }
+  #deco-border {
+    border: var(--outside-border-size) solid #ffd700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(
+      100% - var(--outside-border-size) * 2 - var(--outside-margin) * 2
+    );
+    height: calc(
+      100% - var(--outside-border-size) * 2 - var(--outside-margin) * 2
+    );
+    z-index: 1;
+    margin: var(--outside-margin);
+    pointer-events: none;
+  }
+  #deco-border:after {
+    border: var(--inside-border-size) solid #ffd700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--inside-border-size) * 2 - var(--inside-margin) * 2);
+    height: calc(100% - var(--inside-border-size) * 2 - var(--inside-margin) * 2);
+    z-index: 1;
+    margin: var(--inside-margin);
+    content: "";
+  }
