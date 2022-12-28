@@ -52,7 +52,7 @@ This project is licensed under the MIT License. You may use and modify the code 
 
 ## Contact
 
-Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en contactarme a través de los siguientes enlaces:
+If you have any questions or comments about this project, please do not hesitate to contact me via the links below:
 
 - George Herrada Farfán <br>
 
